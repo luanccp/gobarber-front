@@ -18,7 +18,8 @@
     "react-icons": "^3.10.0",
     "react-scripts": "3.4.1",
     "styled-components": "^5.1.0",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "yup": "^0.28.4"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
@@ -26,6 +27,7 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@types/react": "~16.9.23",
     "@types/styled-components": "^5.1.0",
+    "@types/yup": "^0.26.37",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "babel-preset-expo": "~8.1.0",
