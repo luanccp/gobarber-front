@@ -33,6 +33,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
+    'no-unused-expressions':'off',
     'react/jsx-filename-extension': [
       'warn',
       { extensions: ['.jsx', '.js', '.tsx', '.ts'] },
