@@ -38,6 +38,7 @@ module.exports = {
       'warn',
       { extensions: ['.jsx', '.js', '.tsx', '.ts'] },
     ],
+    'import/no-cycle': 'off',
     'import/prefer-default-export': 'off',
     "no-unused-vars": 'off',
     'no-use-before-define': ['error', { variables: false }],
