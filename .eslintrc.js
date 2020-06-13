@@ -34,6 +34,8 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
     'no-unused-expressions':'off',
+    '@typescript-eslint/camelcase':'off',
+    'camelcase':'off',
     'react/jsx-filename-extension': [
       'warn',
       { extensions: ['.jsx', '.js', '.tsx', '.ts'] },
