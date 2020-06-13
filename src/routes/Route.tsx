@@ -31,11 +31,11 @@ const Route: React.FC<RouteProps> = ({
       {...rest}
       render={({ location }) => {
         return isPrivate === !!user ? (
-          <Component />
-        ) : (
           <Redirect
             to={{ pathname: isPrivate ? '/' : 'dashboard', state: location }}
           />
+        ) : (
+          <Component />
         );
       }}
     />
