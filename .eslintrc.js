@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
   },
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
@@ -33,16 +34,16 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': 'off',
-    'no-unused-expressions':'off',
-    '@typescript-eslint/camelcase':'off',
-    'camelcase':'off',
+    'no-unused-expressions': 'off',
+    '@typescript-eslint/camelcase': 'off',
+    camelcase: 'off',
     'react/jsx-filename-extension': [
       'warn',
       { extensions: ['.jsx', '.js', '.tsx', '.ts'] },
     ],
     'import/no-cycle': 'off',
     'import/prefer-default-export': 'off',
-    "no-unused-vars": 'off',
+    'no-unused-vars': 'off',
     'no-use-before-define': ['error', { variables: false }],
     'func-names': ['error', 'never'],
     'import/extensions': [
