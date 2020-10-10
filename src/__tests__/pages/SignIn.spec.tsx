@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render, waitFor } from '@testing-library/react';
+import { fireEvent, render, wait } from '@testing-library/react';
 import SignIn from '../../pages/SignIn';
 
 const mockedHistoryPush = jest.fn();
@@ -50,7 +50,7 @@ describe('SignIn Page', () => {
 
     fireEvent.click(buttonElement);
 
-    await waitFor(() => {
+    await wait(() => {
       expect(mockedHistoryPush).toHaveBeenCalledWith('/dashboard');
     });
   });
@@ -68,7 +68,7 @@ describe('SignIn Page', () => {
 
     fireEvent.click(buttonElement);
 
-    await waitFor(() => {
+    await wait(() => {
       expect(mockedHistoryPush).not.toHaveBeenCalled();
     });
   });
@@ -89,7 +89,7 @@ describe('SignIn Page', () => {
 
     fireEvent.click(buttonElement);
 
-    await waitFor(() => {
+    await wait(() => {
       expect(mockedAddToast).toHaveBeenCalledWith(
         expect.objectContaining({ type: 'error' })
       );
